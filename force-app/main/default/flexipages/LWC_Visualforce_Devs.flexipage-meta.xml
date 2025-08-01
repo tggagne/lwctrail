@@ -11,6 +11,12 @@
                 <identifier>c_accountSearch</identifier>
             </componentInstance>
         </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentName>accountFinder</componentName>
+                <identifier>c_accountFinder</identifier>
+            </componentInstance>
+        </itemInstances>
         <name>region2</name>
         <type>Region</type>
     </flexiPageRegions>
