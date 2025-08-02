@@ -8,5 +8,22 @@
   "name": "lwctrail",
   "namespace": "",
   "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "62.0"
+  "sourceApiVersion": "62.0",
+  "replacements": [
+    {
+      "glob": "force-app/main/default/classes/*.cls",
+      "stringToReplace": "SFGITREPONAME",
+      "replaceWithEnv": "SFGITREPONAME"
+    },
+    {
+      "glob": "force-app/main/default/classes/*.cls",
+      "stringToReplace": "SFGITBRANCHNAME",
+      "replaceWithEnv": "SFGITBRANCHNAME"
+    },
+    {
+      "glob": "force-app/main/default/classes/*.cls",
+      "stringToReplace": "SFGITCOMMIT",
+      "replaceWithEnv": "SFGITCOMMIT"
+    }
+  ]
 }
