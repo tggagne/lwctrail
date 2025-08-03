@@ -17,4 +17,13 @@ public with sharing class AccountListControllerLwc {
              WHERE NumberOfEmployees >= :numberOfEmployees
         ];
     }
+
+    @AuraEnabled(cacheable=true)
+    public static List<Account> queryAccountsByRevenue(decimal annualRevenue) {
+        return [
+            SELECT Name
+              FROM Account
+             WHERE AnnualRevenue >= :annualRevenue
+        ];
+    }
 }
